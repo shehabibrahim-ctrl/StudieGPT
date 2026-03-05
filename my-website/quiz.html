@@ -17,8 +17,15 @@
     </nav>
 
     <section class="page">
-        <h1>Quiz</h1>
-        <div id="quiz-container">
+        <h1>Välj ämne</h1>
+        <div id="subject-selection">
+            <button class="btn" data-subject="matematik">Matematik</button>
+            <button class="btn" data-subject="engelska">Engelska</button>
+            <button class="btn" data-subject="svenska">Svenska</button>
+            <button class="btn" data-subject="slump">Slumpmässigt</button>
+        </div>
+
+        <div id="quiz-container" style="display:none;">
             <p id="question"></p>
             <div id="answers"></div>
             <button id="nextBtn" class="btn">Nästa</button>
@@ -27,7 +34,7 @@
         <div id="result" style="display:none;">
             <h2>Resultat</h2>
             <p id="score"></p>
-            <a href="quiz.html" class="btn">Spela igen</a>
+            <button id="restartBtn" class="btn">Spela igen</button>
         </div>
     </section>
 
